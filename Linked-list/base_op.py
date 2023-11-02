@@ -100,32 +100,34 @@ class LinkedList:
             cur = cur.next
         cur.next = None
 
-nums = [1, 3, 5, 7, 9]
-demo = LinkedList(nums=nums)
-print(demo)
-print(demo.length)
 
-print("增")
-demo.insert_front(22)
-print(demo)
+if __name__ == "__main__":
+    nums = [1, 3, 5, 7, 9]
+    demo = LinkedList(nums=nums)
+    print(demo)
+    print(demo.length)
 
-demo.insert_rear(666)
-print(demo)
+    print("增")
+    demo.insert_front(22)
+    print(demo)
 
-demo.insert_inside(3, 8888)
-print(demo)
+    demo.insert_rear(666)
+    print(demo)
 
-print("删")
-demo.remove_front()
-print(demo)
-demo.remove_rear()
-print(demo)
-demo.remove_inside(3)
-print(demo)
+    demo.insert_inside(3, 8888)
+    print(demo)
 
-print("改")
-demo.change(4, 99)
-print(demo)
+    print("删")
+    demo.remove_front()
+    print(demo)
+    demo.remove_rear()
+    print(demo)
+    demo.remove_inside(3)
+    print(demo)
 
-print("查")
-print(demo.find(3))
+    print("改")
+    demo.change(4, 99)
+    print(demo)
+
+    print("查")
+    print(demo.find(3))
